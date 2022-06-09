@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.navbar{
+  background-color: cadetblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar input{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.cart{
+  margin-right: 20px;
+  position: relative;
+  padding: 10px;
+
+}
+.cart>i{
+  font-size: 1.2rem;
+}
+.cart .count{
+  position: absolute;
+  background-color: orange;
+  border-radius: 50%;
+  right: -10;
+  top: 0;
+
+  padding: 0 5px;
+  margin: 0;
+}
+.content{
+  display: flex;
+}
+.categories{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+position: fixed;
+height: 80vh;
+top: 20vh;
+justify-content: center;
+align-items: center;
+}
+.categories button{
+  height: 70px;
+  outline: none;
+  border: 0;
+  width: 80%;
+  cursor: pointer;
+  transition: all 1s;
+}
+.categories button:hover{
+  background-color: rgba(0, 255, 255, 0.877);
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  width:75%;
+  right:0px;
+}
+
+.products img{
+  width: 100%;
+  height: 300px;
+}
+
+.product{
+  text-align: left;
+  width: 250px;
+  height: 500px;
+}
+
+.product small{
+  margin-right: 20px;
+}
+
+.product .price{
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 7px;
+  display: block;
+  width: fit-content;
+}
+
+.product button{
+  width: 100%;
+  margin: 10px auto;
+  border: none;
+  background-color:aquamarine;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.product:hover{
+  box-shadow: 2px 2px 1px rgb(182, 179, 179);
+  border-radius: 10px;
+  transform: scale(1.02);
+}
